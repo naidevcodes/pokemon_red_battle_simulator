@@ -10,6 +10,26 @@
 		-ms-user-select: none;
     }
 
+  #main_container {
+    width: 400px;
+    height: 631px;
+    border: 6px solid #212121;
+  }
+
+  #top_screen {
+    height: 312px;
+    overflow: hidden;
+  }
+
+  #bottom_screen {
+    overflow: hidden;
+  }
+
+  .img_spacing {
+    float: left;
+  }
+  
+
 	
 	/*---- Theme Classes ----*/
 	
@@ -25,11 +45,11 @@
         transform: translate3d(-50%, -50%, 0) !important;
     }
 	
-	.box-shadow-1 {
+	.box_shadow-1 {
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37) !important;
     }
 
-    .border-radius {
+    .border_radius {
         -webkit-border-radius: 2px !important;
         -moz-border-radius: 2px !important;
         border-radius: 2px !important;
@@ -43,7 +63,7 @@
         display: none !important;
     }
 	
-	.text-center {
+	.text_center {
         text-align: center !important;
     }
 	
@@ -59,7 +79,7 @@
         letter-spacing: 0.005em !important;
     }
 
-    .text-subhead {
+    .text_subhead {
         font-size: 16px !important;
         line-height: 24px !important;
         letter-spacing: 0.01em !important;
