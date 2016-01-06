@@ -78,6 +78,13 @@ var playerTurn = {
   }
 };
 
+var loop = function() {
+  if (cpuPokemon.health <= 0 || userPokemon.health <= 0) {
+    $("#game-over").removeClass("hide");
+    console.log("Game Over");
+  }
+};
+
 var init = function() {
   cpuPokemon = pikachu;
   userPokemon = charmander;
@@ -86,6 +93,7 @@ var init = function() {
   $("#user-name").text(userPokemon.name);
   $("#user-lvl").text("lvl " + userPokemon.lvl);
   currentState = playerTurn;
+  loop();
 };
 
 init();
