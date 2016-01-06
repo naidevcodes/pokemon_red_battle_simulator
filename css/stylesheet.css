@@ -25,6 +25,34 @@
     overflow: hidden;
   }
 
+  #move1_text {
+    width: 132px;
+    bottom: 196px;
+    left: 34px;
+    z-index: 1;
+  }
+
+  #move2_text {
+    width: 132px;
+    bottom: 196px;
+    right: 34px;
+    z-index: 1;
+  }
+
+  #move3_text {
+    width: 132px;
+    bottom: 101px;
+    left: 34px;
+    z-index: 1;
+  }
+
+  #move4_text {
+    width: 132px;
+    bottom: 101px;
+    right: 34px;
+    z-index: 1;
+  }
+
   .img_spacing {
     float: left;
   }
