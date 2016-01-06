@@ -5,7 +5,8 @@
 		<meta charset="utf-8">
 		<title>Pokemon Battle</title>
 		
-		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' 
+    type='text/css'>
 		<link href="css/stylesheet.css" rel="stylesheet">
 		
 	</head>
@@ -13,51 +14,82 @@
 	<body>
     <div id="main_container" class="bullseye box_shadow-1 border_radius">
       
+<!-- TOP SCREEN -->
+
       <div id="top_screen">
 
-        <img id="charmander-img" class="absolute" src="img/charmander.png" style="height: 115px; top: 121px; left: 40px">
+        <img class="img_spacing" src="img/grass.png" width="400px">
+        <img class="img_spacing" src="img/chat_window.png" width="400px">
+
+        <div id="chat-text" class="absolute text-subhead">What will Billy do?</div>
+
+<!-- CHARMANDER -->
+
+        <img id="charmander-img" class="absolute" src="img/charmander.png" 
+        style="height: 115px; top: 121px; left: 40px">
 
         <div id="user-name" class="absolute">Billy</div>
         <div id="user-lvl" class="absolute">lvl 12</div>
 
-        <img src="img/your_info.png" class="absolute" style="height: 45px; top: 187px; right: 24px;">
+        <div class="absolute" style="width: 71px; top: 216px; left: 263px;">
+          <div id="user-health-bar" class="absolute"></div>
+        </div>
 
+        <img src="img/your_info.png" class="absolute" 
+        style="height: 45px; top: 187px; right: 24px;">
 
-        <img id="pikachu-img" class="absolute" src="img/pikachu.png" style="height: 115px; top: 40px; right: 46px">
+<!-- PIKACHU -->
+
+        <img id="pikachu-img" class="absolute" src="img/pikachu.png" 
+        style="height: 115px; top: 40px; right: 46px">
 
         <div id="cpu-name" class="absolute">Pikachu</div>
         <div id="cpu-lvl" class="absolute">lvl 10</div>
 
-        <img src="img/enemy_info.png" class="absolute" style="height: 45px; top: 10px; left: 24px;">
+        <div class="absolute" style="width: 71px; top: 39px; left: 85px;">
+          <div id="cpu-health-bar" class="absolute"></div>
+        </div>
 
-        <img class="img_spacing" src="img/grass.png" width="400px">
-        <img class="img_spacing" src="img/chat_window.png" width="400px">
+        <img src="img/enemy_info.png" class="absolute" 
+        style="height: 45px; top: 10px; left: 24px;">
+        
       </div>
       
+<!-- BOTTOM SCREEN -->
+
       <div id="bottom_screen">
         <img class="img_spacing" src="img/toolbar_bg.png" width="400px" >
           
         <div id="user_buttons">
           <div id="move1_button">
-            <div id="move1_text" class="absolute text-18 text_center">Ember</div>
-            <img class="absolute" src="img/move.png" height="75px" style="bottom: 170px; left: 20px;">
+            <div id="move1_text" class="absolute text-18 text_center">Ember
+            </div>
+            <img class="absolute" src="img/move.png" height="75px" 
+            style="bottom: 170px; left: 20px;">
           </div>
           <div id="move2_button">
-            <div id="move2_text" class="absolute text-18 text_center">Scratch</div>
-            <img class="absolute" src="img/move.png" height="75px" style="bottom: 170px; right: 20px;">
+            <div id="move2_text" class="absolute text-18 text_center">Scratch
+            </div>
+            <img class="absolute" src="img/move.png" height="75px" 
+            style="bottom: 170px; right: 20px;">
           </div>
           <div id="move3_button">
-            <div id="move3_text" class="absolute text-18 text_center">Growl</div>
-            <img class="absolute" src="img/move.png" height="75px" style="bottom: 75px; left: 20px;">
+            <div id="move3_text" class="absolute text-18 text_center">Growl
+            </div>
+            <img class="absolute" src="img/move.png" height="75px" 
+            style="bottom: 75px; left: 20px;">
           </div>
           <div id="move4_button">
-            <div id="move4_text" class="absolute text-18 text_center">Fear</div>
-            <img class="absolute" src="img/move.png" height="75px" style="bottom: 75px; right: 20px;">
+            <div id="move4_text" class="absolute text-18 text_center">Fear
+            </div>
+            <img class="absolute" src="img/move.png" height="75px" 
+            style="bottom: 75px; right: 20px;">
           </div>
         </div>
+
+        <div id="game-over" class="absolute text-30 text-center hide">GAME OVER</div>
+
       </div>
-
-
     </div>
 
 
