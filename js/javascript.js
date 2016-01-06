@@ -85,6 +85,7 @@ var init = function() {
   $("#cpu-lvl").text("lvl " + cpuPokemon.lvl);
   $("#user-name").text(userPokemon.name);
   $("#user-lvl").text("lvl " + userPokemon.lvl);
+  currentState = playerTurn;
 };
 
 init();
