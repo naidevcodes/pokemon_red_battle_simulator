@@ -53,6 +53,34 @@
     z-index: 1;
   }
 
+  #user-name {
+    width: 83px;
+    top: 193px;
+    right: 72px;
+    z-index: 1;
+  }
+
+  #user-lvl {
+    top: 198px;
+    right: 38px;
+    font-size: 11px;
+    z-index: 1;
+  }
+
+  #cpu-name {
+    width: 83px;
+    top: 15px;
+    left: 41px;
+    z-index: 1;
+  }
+
+  #cpu-lvl {
+    top: 19px;
+    left: 120px;
+    font-size: 11px;
+    z-index: 1;
+  }
+
   .img_spacing {
     float: left;
   }
