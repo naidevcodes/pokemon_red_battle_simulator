@@ -61,3 +61,31 @@ var pikachu {
   }]
 
 };
+
+var currentState;
+
+var cpuTurn = {
+  play: Function() {
+
+  }
+};
+
+var playerTurn = {
+  play: Function() {
+
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
