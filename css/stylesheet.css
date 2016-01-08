@@ -125,7 +125,7 @@
 	/*---- Theme Classes ----*/
 	
 	.absolute {
-        position: absolute !important;
+        position: absolute;
     }
 	
 	.bullseye {
