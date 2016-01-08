@@ -251,17 +251,3 @@ var init = function() {
 };
 
 init();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
