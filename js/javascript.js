@@ -105,7 +105,7 @@ var cpuTurn = {
       if (currentCPUMove.type == "Attack") {
         setTimeout(attackingMove, 1500);
       } else {
-        // setTimeout(defensiveMove, 1500);
+        setTimeout(defensiveMove, 1500);
       }
     };
 
@@ -129,6 +129,14 @@ var cpuTurn = {
       loop();
     };
 
+    var defensiveMove = function() {
+      $("#attack-img").addClass("hide");
+      $("#attack-img").removeClass("cpu-attack-img");
+      userPokemon.effect = currentCPUMove.power;
+      currentState = playerTurn;
+      loop();
+    };
+
     setUpCPUField();
   }
 };
@@ -136,6 +144,17 @@ var cpuTurn = {
 var playerTurn = {
   play: function() {
 
+    var setUpUserField = function () {
+      var moveButtons = ["move1-text", "move2-text", "move3-text", "move4-text"]
+
+      $("#user-buttons").removeClass("hide");
+      $("#chat-text").text(""What will " + userPokemon.name + " do?"");
+
+      for (var i = moveButtons.length - 1; i >= 0; i--) {
+        $(moveButtons[i]).text(userPokemon.moves[i].name);
+      };
+    };
+    setUpUserField();
   }
 };
 
