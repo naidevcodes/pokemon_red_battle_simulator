@@ -143,6 +143,7 @@ var cpuTurn = {
 
 var playerTurn = {
   play: function() {
+    var currentUserMove;
 
     var setUpUserField = function () {
       var moveButtons = ["move1-text", "move2-text", "move3-text", "move4-text"]
@@ -154,6 +155,14 @@ var playerTurn = {
         $(moveButtons[i]).text(userPokemon.moves[i].name);
       };
     };
+
+    $("#move1-button", "move2-button", "move3-button", "move4-button").unbind().click(function() {
+      var move = $(this).attr("value");
+      currentUserMove = userPokemon.moves[move];
+
+
+    });
+
     setUpUserField();
   }
 };
