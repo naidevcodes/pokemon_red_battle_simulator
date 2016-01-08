@@ -146,7 +146,7 @@ var playerTurn = {
     var currentUserMove;
 
     var setUpUserField = function () {
-      var moveButtons = ["#move1_text, #move2_text, #move3_text, #move4_text"]
+      var moveButtons = ["#move1_text", "#move2_text", "#move3_text", "#move4_text"]
 
       $("#user_buttons").removeClass("hide");
       $("#chat-text").text("What will " + userPokemon.name + " do?");
