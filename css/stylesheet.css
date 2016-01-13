@@ -130,20 +130,20 @@
 	
 	.bullseye {
 		-webkit-filter: blur(0);
-        position: relative !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate3d(-50%, -50%, 0) !important;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
     }
 	
 	.box_shadow-1 {
-        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37) !important;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
     }
 
     .border_radius {
-        -webkit-border-radius: 2px !important;
-        -moz-border-radius: 2px !important;
-        border-radius: 2px !important;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
     }
 
     .pointer {
@@ -151,27 +151,27 @@
     }
 
     .hide {
-        display: none !important;
+        display: none;
     }
 	
 	.text_center {
-        text-align: center !important;
+        text-align: center;
     }
 	
 	.text-30 {
-        font-size: 30px !important;
-        line-height: 40px !important;
-        letter-spacing: normal !important;
+        font-size: 30px;
+        line-height: 40px;
+        letter-spacing: normal;
     }
 
     .text-18 {
-        font-size: 18px !important;
-        line-height: 24px !important;
-        letter-spacing: 0.005em !important;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.005em;
     }
 
     .text_subhead {
-        font-size: 16px !important;
-        line-height: 24px !important;
-        letter-spacing: 0.01em !important;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
     }
