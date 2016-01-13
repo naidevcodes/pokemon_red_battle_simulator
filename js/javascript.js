@@ -1,5 +1,5 @@
 var charmander = {
-  name: "Alex",
+  name: "Billy",
   health: 100,
   lvl: 12,
   effect: null,
@@ -158,11 +158,10 @@ var playerTurn = {
       for (var i = moveButtons.length - 1; i >= 0; i--) {
         $(moveButtons[i]).text(userPokemon.moves[i].name);
       }
-      prepareToAttack();
     };
 
     var prepareToAttack = function() {
-      $("user-buttons").addClass("hide")
+      // $("user_buttons").addClass("hide");
 
       $("#charmander-img").animate({
         top: "-=25",
@@ -224,7 +223,7 @@ var playerTurn = {
       $("#attack-img").addClass("hide");
       $("#attack-img").removeClass("user-attack-img");
       cpuPokemon.effect = currentUserMove.power;
-      currentState = playerTurn;
+      currentState = cpuTurn;
       loop();
     };
 
@@ -242,6 +241,8 @@ var playerTurn = {
 var loop = function() {
   if (cpuPokemon.health <= 0 || userPokemon.health <= 0) {
     $("#game-over").removeClass("hide");
+    $("#user_buttons").addClass("hide");
+    $("#chat-text").addClass("hide");
   } else {
     currentState.play();
   }
