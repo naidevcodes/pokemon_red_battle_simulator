@@ -1,5 +1,5 @@
 var charmander = {
-  name: "Billy",
+  name: "Alex",
   health: 100,
   lvl: 12,
   effect: null,
@@ -72,6 +72,7 @@ var cpuTurn = {
     var currentCPUMove = cpuPokemon.moves[randomMove];
 
     var setUpCPUField = function() {
+      $("#user_buttons").addClass("hide");
       $("#chat-text").text("What will " + cpuPokemon.name + " do?");
       prepareToAttack();
     };
@@ -90,10 +91,12 @@ var cpuTurn = {
     var getAccuracy = function() {
       var setAccuracy = Math.random();
       if (setAccuracy <= currentCPUMove.accuracy) {
-        $("#chat-text").text(cpuPokemon.name + " used " + currentCPUMove.name + "!")
+        $("#chat-text").text(cpuPokemon.name + " used " + 
+          currentCPUMove.name + "!")
         getMoveType();
       } else {
-        $("#chat-text").text(cpuPokemon.name + " missed with " + currentCPUMove.name + "!")
+        $("#chat-text").text(cpuPokemon.name + " missed with " + 
+          currentCPUMove.name + "!")
         currentState = playerTurn;
         setTimeout(loop, 1500)
       }
@@ -112,7 +115,8 @@ var cpuTurn = {
     var showMoveAnimation = function () {
       $("#attack-img").addClass("cpu-attack-img");
       $("#attack-img").removeClass("hide");
-      $("#attack-img").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100);
+      $("#attack-img").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).
+      fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100);
     };
 
     var attackingMove = function() {
@@ -154,6 +158,7 @@ var playerTurn = {
       for (var i = moveButtons.length - 1; i >= 0; i--) {
         $(moveButtons[i]).text(userPokemon.moves[i].name);
       }
+      prepareToAttack();
     };
 
     var prepareToAttack = function() {
@@ -173,10 +178,12 @@ var playerTurn = {
       var setAccuracy = Math.random();
 
       if (setAccuracy <= currentUserMove.accuracy) {
-        $("#chat-text").text(userPokemon.name + " used " + currentUserMove.name + "!")
+        $("#chat-text").text(userPokemon.name + " used " + 
+          currentUserMove.name + "!")
         getMoveType();
       } else {
-        $("#chat-text").text(userPokemon.name + " missed with " + currentUserMove.name + "!")
+        $("#chat-text").text(userPokemon.name + " missed with " + 
+          currentUserMove.name + "!")
         currentState = cpuTurn;
         setTimeout(loop, 1500)
       }
@@ -195,7 +202,8 @@ var playerTurn = {
     var showMoveAnimation = function () {
       $("#attack-img").addClass("user-attack-img");
       $("#attack-img").removeClass("hide");
-      $("#attack-img").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100);
+      $("#attack-img").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).
+      fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100);
     };
 
     var attackingMove = function() {
